@@ -1,0 +1,5 @@
+---
+blockquote: CluFNfmMyGu
+tags:
+  - stars
+---
