@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/blog"
+public_folder: "/assets/blog"
+collections:
+  - name: "portfolio"
+    label: "First Images"
+    folder: "src/portfolio"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["portfolio"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+  - name: "stars"
+    label: "Stars"
+    folder: "src/stars"
+    create: true
+    fields:
+      - { label: "blockquote", name: "blockquote", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["stars"] }
+  - name: "por1"
+    label: "collection1 Images"
+    folder: "src/por1"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["por1"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+  - name: "por2"
+    label: "collection2 Images"
+    folder: "src/por2"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["por2"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+  - name: "por3"
+    label: "collection3 Images"
+    folder: "src/por3"
+    create: true
+    fields:
+      - { label: "Client Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["por3"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
