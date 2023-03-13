@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "cross-env ELEVENTY_PRODUCTION=true eleventy && cross-env NODE_ENV=production postcss styles/tailwind.css --o _site/style.css"
   },
   "author": "",
   "license": "ISC",
